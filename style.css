@@ -1,13 +1,48 @@
-/* Cores de fundo para os cards */
-.crm-kanban-item.task-mayra {
-  background-color: #ffe5ce !important;
+/* Botões de status */
+.crm-kanban-item-fields-item-value.status-analise,
+.crm-kanban-item-fields-item-value.status-andamento,
+.crm-kanban-item-fields-item-value.status-testes,
+.crm-kanban-item-fields-item-value.status-concluido,
+.crm-kanban-item-fields-item-value.status-bloqueado,
+.crm-kanban-item-fields-item-value.status-cancelado {
+  display: inline-block !important;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  border: none !important; /* Remove a borda */
 }
 
-.crm-kanban-item.task-duda {
-  background-color: #e4f4ff  !important;
+/* Cores ajustadas */
+.crm-kanban-item-fields-item-value.status-analise {
+  color: #000000 !important;
+  background-color: #92A8D1 !important; /* Azul suave */
 }
 
-/* Garante que o background não seja sobrescrito */
-.crm-kanban-item {
-  transition: background-color 0.3s ease-in-out !important;
+.crm-kanban-item-fields-item-value.status-andamento {
+  color: #000000 !important;
+  background-color: #fad502 !important;  /* Amarelo vibrante (dourado) */
+}
+
+.crm-kanban-item-fields-item-value.status-testes {
+  color: #000000 !important;
+  background-color: #FF8C42 !important; /* Laranja mais forte */
+}
+
+.crm-kanban-item-fields-item-value.status-concluido {
+  color: #000000 !important;
+background-color: #93b80f !important; /* Verde vibrante */
+}
+
+.crm-kanban-item-fields-item-value.status-bloqueado {
+  color: #ffffff !important; /* Alterei para preto para melhorar contraste */
+  background-color: #fc554c !important; /* Vermelho rosado */
+}
+
+.crm-kanban-item-fields-item-value.status-cancelado {
+  color: #ffffff !important;
+  background-color: #2B2B2B !important; /* Preto escuro */
 }
